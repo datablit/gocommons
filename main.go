@@ -12,7 +12,7 @@ func main() {
 
 	// 1. GetOrLoad (auto-caches result)
 	val, _ := cache.GetOrLoad("greeting", func() (string, error) {
-		fmt.Println("Loading greeting...")
+		fmt.Println("Loading greeting")
 		return "Hello, world!", nil
 	})
 	fmt.Println(val) // "Hello, world!"
